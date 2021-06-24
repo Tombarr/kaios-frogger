@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Frogger</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+        <meta name="theme-color" content="rgb(0, 0, 0)" />
+        <meta name="description" content="Play the classic game Frogr anytime, anywhere. Frogr is designed for KaiOS and based on Frogger (Japanese: フロッガー), the 1981 classic arcade action game. Frogr is not affiliated with nor endorsed by Konami Industry Co." />
+
+        <link rel="manifest" href="manifest.webapp" type="application/x-web-app-manifest+json" />
+        <link rel="manifest" href="manifest.webmanifest" type="application/manifest+json" />
+
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="application-name" content="Frogr" />
+        <meta name="apple-mobile-web-app-title" content="Frogr" />
+
+        <link rel="stylesheet" type="text/css" href="main.css" />
+    </head>
+    <body role="application">
+        <canvas id="background-canvas" width="960" height="1280"></canvas>
+        <canvas id="canvas" width="960" height="1280"></canvas>
+
+        <section id="app-interstitial" role="button" aria-hidden="true" hidden>
+            <section class="interstitial-image">
+                <img src="images/podlp.png" alt="Download PodLP on the KaiStore"
+                    width="240" height="264" draggable="false" decoding="async" loading="lazy" />
+                </section>
+                <section class="soft-keys">
+                    <button class="soft-key-left" data-key="SoftLeft" data-action="dismiss" role="button">Dismiss</button>
+                    <button class="soft-key-right" data-key="SoftRight" data-action="go" role="button">Go</button>
+                </section>
+        </section>
+
+        <noscript>JavaScript is required to play Frogr</noscript>
+
+        <script defer src="scripts/ads-sdk.v5.min.js" type="text/javascript" integrity="sha384-JqhDqIgrBSDFaozayZoueCkH9WFwuojD1+AZMr5PtiSteYb7iRYn6s2n8q8WCmFa"></script>
+        <script defer src="scripts/main.js" type="text/javascript"></script>
+    </body>
+</html>

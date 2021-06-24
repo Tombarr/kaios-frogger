@@ -1,0 +1,47 @@
+{
+  "name": "Frogr",
+  "display": "Frogr",
+  "version": "1.0.1",
+  "subtitle": "The classic arcade game Frogger on KaiOS",
+  "description": "Play the classic game Frogr anytime, anywhere. Frogr is designed for KaiOS and based on Frogger (Japanese: フロッガー), the 1981 classic arcade action game. Frogr is not affiliated with nor endorsed by Konami Industry Co.",
+  "type": "privileged",
+  "launch_path": "/index.html",
+  "icons": {
+    "56": "/images/frogger_56.png",
+    "112": "/images/frogger_112.png"
+  },
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "installs_allowed_from": [
+    "*"
+  ],
+  "developer": {
+    "name": "Last Byte LLC",
+    "url": "https://github.com/Tombarr"
+  },
+  "cursor": false,
+  "fullscreen": true,
+  "permissions": {
+    "audio-channel-normal": { },
+    "audio-channel-content": { },
+    "mobiledata": { },
+    "wifidata": { }
+  },
+  "activities": {
+    "open-frogger": {
+      "href": "/index.html",
+      "disposition": "window"
+    }
+  },
+  "locales": {
+    "en-US": {
+      "name": "Frogr",
+      "subtitle": "The classic arcade game Frogger on KaiOS",
+      "description": "Play the classic game Frogr anytime, anywhere. Frogr is designed for KaiOS and based on Frogger (Japanese: フロッガー), the 1981 classic arcade action game. Frogr is not affiliated with nor endorsed by Konami Industry Co."
+    }
+  },
+  "default_locale": "en-US",
+  "orientation": "portrait"
+}
